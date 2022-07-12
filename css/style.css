@@ -237,9 +237,11 @@ nav {
     align-items: center;
     justify-content: center;
     background-image: url(../images/illustration-editor-desktop.svg);
+    background-size: 100vh;
+    background-position-x: right;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: 140%;
+    padding: 5rem;
+
 }
 
 .design-section h2 {
