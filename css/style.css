@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+/*
+font-family: 'Overpass',
+sans-serif;
+font-family: 'Ubuntu',
+sans-serif;
+*/
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Light-red: hsl(356, 100%, 66%);
+    /*(CTA text)*/
+    --Very-light-red: hsl(355, 100%, 74%);
+    /*(CTA hover background)*/
+    --Very-dark-blue: hsl(208, 49%, 24%);
+    /*(headings)*/
+    --White: hsl(0, 0%, 100%);
+    /*(text)*/
+    --Grayish-blue: hsl(240, 2%, 79%);
+    /*(footer text)*/
+    --Very-dark-grayish-blue: hsl(207, 13%, 34%);
+    /*(body copy)*/
+    --Very-dark-black-blue: hsl(240, 10%, 16%);
+    /*(footer background)*/
+    --Very-very-light-red: hsl(13, 100%, 72%);
+    /*Background gradient*/
+    --Light-red: hsl(353, 100%, 62%);
+    /*Background gradient*/
+    --Very-dark-gray-blue: hsl(237, 17%, 21%);
+    /*Background gradient - body:*/
+    --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+    /*Background gradient - body:*/
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Overpass', sans-serif;
+}
+
+header {
+    background: rgb(255, 143, 112);
+    background: linear-gradient(90deg, rgba(255, 143, 112, 1) 23%, rgba(255, 82, 93, 1) 58%);
+    border-radius: 0 0 0 100px;
+}
+
+.imgx {
+    height: 500px;
+    background-image: url(../images/bg-pattern-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 200vw;
+    background-position: 20% 55%;
+    border-radius: 0 0 0 100px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    padding: 1.5rem 5rem;
+    align-items: center;
+    align-content: center;
+}
+
+.logo-header img {
+    padding-top: 10px;
+}
+
+.menu-header .menu-principal li span {
+    padding-bottom: 10px;
+}
+
+.menu-principal {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    color: var(--White);
+    font-family: 'Ubuntu',
+        sans-serif;
+    font-weight: 700;
+
+}
+
+.menu-principal li span {
+    padding-left: 20px;
+}
+
+.sub-itens-first {
+    position: absolute;
+    list-style: none;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    padding: 0.5rem 1rem;
+    color: black;
+    border-radius: 5px;
+    display: none;
+    font-size: 15px;
+    text-align: left;
+    top: 30px;
+    line-height: 25px;
+}
+
+.sub-itens-first li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Overpass',
+        sans-serif;
+    font-weight: 300;
+}
+
+.sub-itens-first li a:hover {
+    font-weight: 700;
+}
+
+.menu-principal li span:hover {
+    text-decoration: underline 2px;
+}
+
+.menu-principal li:hover .sub-itens-first {
+    display: block;
+}
+
+
+.menu-principal li:hover span img {
+    transform: rotate(180deg);
+}
+
+.login-header {
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+}
+
+.login-header button {
+    width: 120px;
+    height: 40px;
+    border-radius: 75px;
+}
+
+.login-header button:first-of-type {
+    background: transparent;
+    color: var(--White);
+    font-weight: 700;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-header button:last-of-type {
+    color: var(--Light-red);
+    font-family: 'Ubuntu',
+        sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 500ms ease-in-out;
+}
+
+.login-header button:last-of-type:hover {
+    cursor: pointer;
+    background-color: hsl(355, 100%, 74%);
+    color: var(--White);
+}
+
+.principal-header {
+    width: max-content;
+    text-align: center;
+    margin: 50px auto;
+    align-items: center;
+}
+
+.principal-header h1 {
+    font-size: 55px;
+    color: var(--White);
+    font-family: 'Overpass',
+        sans-serif;
+    font-weight: 600;
+}
+
+.principal-header p {
+    font-family: 'Overpass',
+        sans-serif;
+    font-weight: 300;
+    color: var(--White);
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.principal-header button {
+    margin-top: 40px;
+    width: 120px;
+    height: 40px;
+    border-radius: 75px;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+.principal-header button:first-of-type {
+    color: var(--Light-red);
+    font-family: 'Ubuntu',
+        sans-serif;
+    transition: all 500ms ease-in-out;
+}
+
+.principal-header button:first-of-type:hover {
+    cursor: pointer;
+    background-color: var(--Very-light-red);
+    color: var(--White);
+}
+
+.principal-header button:last-of-type {
+    background-color: transparent;
+    border: 1px solid var(--White);
+    color: white;
+    margin-left: 10px;
+    transition: all 500ms ease-in-out;
+}
+
+.principal-header button:last-of-type:hover {
+    cursor: pointer;
+    color: var(--Light-red);
+    background-color: white;
+}
+
+.design-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 140%;
+}
+
+.design-section h2 {
+    color: var(--Very-dark-blue);
+    font-family: 'Overpass',
+        sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text-design {
+    width: 50%;
+    padding: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-design h3 {
+    color: var(--Very-dark-blue);
+    font-family: 'Overpass',
+        sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.text-design p {
+    color: var(--Very-dark-grayish-blue);
+    font-family: 'Overpass',
+        sans-serif;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
