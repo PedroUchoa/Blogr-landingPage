@@ -238,7 +238,7 @@ nav {
     justify-content: center;
     background-image: url(../images/illustration-editor-desktop.svg);
     background-size: 100vh;
-    background-position-x: right;
+    background-position-x: 60vw;
     background-repeat: no-repeat;
     padding: 5rem;
 
