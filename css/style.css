@@ -237,11 +237,10 @@ nav {
     align-items: center;
     justify-content: center;
     background-image: url(../images/illustration-editor-desktop.svg);
-    background-size: 100vh;
-    background-position-x: 60vw;
+    background-size: 50vw;
     background-repeat: no-repeat;
+    background-position: 125% 50%;
     padding: 5rem;
-
 }
 
 .design-section h2 {
@@ -250,13 +249,13 @@ nav {
         sans-serif;
     font-weight: 600;
     font-size: 40px;
-    margin-bottom: 20px;
 }
 
 .text-design {
     width: 50%;
     padding: 2rem;
-    margin-bottom: 20px;
+    margin-top: 2rem;
+
 }
 
 .text-design h3 {
