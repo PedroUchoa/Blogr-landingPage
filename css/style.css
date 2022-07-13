@@ -276,26 +276,36 @@ nav {
 
 .state-section {
     height: 400px;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    position: relative;
     background: rgb(44, 45, 63);
     background: linear-gradient(90deg, rgba(44, 45, 63, 1) 31%, rgba(63, 65, 96, 1) 58%);
     border-radius: 0 110px 0 110px;
+    
+}
+
+.state-background{
+    height: 400px;
+    display: flex;
+    border-radius: 0 110px 0 110px;
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: -20% 80%;
+    align-items: center;
+    justify-content: right;
+    position: relative;
 }
 
 .state-image {
     position: absolute;
     left: 10%;
     top: -4rem;
+
 }
 
 .state-text {
     float: right;
     width: 40%;
     margin-right: 5rem;
-
 }
 
 .state-text h4 {
@@ -303,7 +313,8 @@ nav {
     font-family: 'Overpass',
         sans-serif;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 35px;
+    width: max-content;
 }
 
 .state-text p {
