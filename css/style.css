@@ -279,10 +279,10 @@ nav {
     background: rgb(44, 45, 63);
     background: linear-gradient(90deg, rgba(44, 45, 63, 1) 31%, rgba(63, 65, 96, 1) 58%);
     border-radius: 0 110px 0 110px;
-    
+
 }
 
-.state-background{
+.state-background {
     height: 400px;
     display: flex;
     border-radius: 0 110px 0 110px;
@@ -323,6 +323,43 @@ nav {
     font-weight: 300;
     color: var(--White);
     margin-top: 20px;
+}
+
+.powerfull-section {
+    height: 650px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-image: url(../images/illustration-laptop-desktop.svg);
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-position: -35% 50%;
+    padding: 5rem;
+}
+
+.powerfull-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-right: 3rem;
+}
+
+.powerfull-text h5 {
+    color: var(--Very-dark-blue);
+    font-family: 'Overpass',
+        sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.powerfull-text p {
+    color: var(--Very-dark-grayish-blue);
+    font-family: 'Overpass',
+        sans-serif;
+    font-weight: 300;
+    margin-bottom: 40px;
 }
 
 .attribution {
