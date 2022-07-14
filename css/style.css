@@ -362,6 +362,41 @@ nav {
     margin-bottom: 40px;
 }
 
+footer{
+    background-color: var(--Very-dark-black-blue);
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content; 
+    justify-content: center;
+    grid-gap: 5rem;
+    padding: 3rem;
+    border-radius: 0 70px 0 0;
+}
+
+footer ul{
+    color: white;
+    list-style: none;
+    font-family: 'Ubuntu',
+            sans-serif;
+
+}
+
+footer ul li{
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--Grayish-blue);
+}
+
+footer ul li:not(:first-child):hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer ul li h6{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
